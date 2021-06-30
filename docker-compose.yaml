@@ -1,0 +1,10 @@
+version: '3.5'
+
+services: 
+  expensetrack.database:
+    image:  mxinfo.azurecr.io/wimc.database:v0.7
+    container_name: wimc.database
+    environment:
+      - "ACCEPT_EULA=Y"
+    ports:
+      - "1433:1433"
