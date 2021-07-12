@@ -2,26 +2,13 @@
 USE CloudResource
 GO
 
-PRINT N'Adding RawJSON column'
+PRINT N'Adding Notes column'
 GO
 
-ALTER TABLE dbo.ResourceContainer
-  ADD RawJson VARCHAR(MAX) NULL
-
-GO
-
-
-UPDATE dbo.ResourceContainer
-  SET RawJSON = '{}'
+ALTER TABLE dbo.Resource
+  ADD Notes VARCHAR(255) NULL
 
 GO
 
-PRINT N'Setting RawJSON column to not null'
-GO
-
-ALTER TABLE dbo.ResourceContainer
-  ALTER COLUMN RawJSON VARCHAR(MAX) NOT NULL
-GO
-
-PRINT N'Completed Add of RawJSON column'
+PRINT N'Completed Add of Notes column'
 GO

@@ -156,6 +156,7 @@ CREATE TABLE dbo.Resource
     CloudId VARCHAR(255) NOT NULL,
     ResourceDefinition VARCHAR(MAX) NOT NULL,
     IsMigrated bit NOT NULL,
+    Notes VARCHAR(255) NULL,
     CONSTRAINT FK_Resource_ResourceContainer FOREIGN KEY (ResourceContainerId) REFERENCES dbo.ResourceContainer(ResourceContainerId)
 )
 
