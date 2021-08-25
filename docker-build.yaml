@@ -11,9 +11,9 @@ pool:
   name: 'Azure Linux VM'
 
 variables:
-  registryServiceConnection: 'setrans-container-registry'
+  registryServiceConnection: 'mxinfo-containers'
   containerRepository: 'wimc.database'
-  imageName: 'setrans.azurecr.io/wimc.database'
+  imageName: 'mxinfo.azurecr.io/wimc.database'
   tag: '$(build.buildId)'
   lowMediumResults: 'trivy-report-low-med.xml'
   highCritResults: 'trivy-report-high-crit.xml'

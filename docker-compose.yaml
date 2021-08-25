@@ -2,7 +2,7 @@ version: '3.5'
 
 services: 
   expensetrack.database:
-    image:  setrans.azurecr.io/wimc.database:0.8
+    image:  mxinfo.azurecr.io/wimc.database:0.8
     container_name: wimc.database
     environment:
       - "ACCEPT_EULA=Y"
