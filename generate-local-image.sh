@@ -27,7 +27,7 @@ docker exec wimc.temp sh -c "/opt/scripts/initialize.sh '$SA_PASSWORD' '$APP_USE
 
 echo "Generating Final Image"
 
-docker commit wimc.temp mxinfo.azurecr.io/wimc.database:${IMAGE_TAG}
+docker commit wimc.temp setrans.azurecr.io/wimc.database:${IMAGE_TAG}
 
 echo "Tear down intermediate containers"
 
